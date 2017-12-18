@@ -163,8 +163,126 @@ age.each { |age|
 
   # population change
 
-  cities = {:Toronto "2800000", :sydney "4020000", :Los_Angeles "3900000"
+  cities = {:Toronto "2800000", :Sydney "4020000", :Los_Angeles "3900000"
 
   cities [:Sydney] = 32
 
-  
+  # exercise 5 -----------------------------------------------------------------
+
+# sum amouunt for citite
+
+cities = {:Toronton"2800000", :Sydney "4020000", :Los_Angeles "3900000" }
+
+cities[:Tornto] + cities[:Sydney] + cities[:Los_Angeles]
+
+
+# ages young or old
+
+names_ages = {:Irenea "23", :Noelle "22", :Alek "21", :Taylor "20" }
+
+names_ages { |name, age|
+  if age >= 22
+    puts "#{name} is old"
+  else
+    puts "#{name} is young"
+  end
+}
+
+# printing last favourie colours
+
+fav_colors = ["pink", "blue", "red"]
+
+puts fav_colors [-2..-1]
+
+# Increased age by one year
+
+names_ages = {:Irenea "23", :Noelle "22", :Alek "21", :Taylor "20" }
+
+new_age = names_ages.map { |name, age|
+  age += 1
+  puts "#{name} your age now is #{age}"
+}
+
+# add colors to array
+
+fav_colors = ["pink", "blue", "red"]
+
+fav_colors += ["yellow", "purple"]
+
+#exercise 6 ---------------------------------------------------------------------
+
+# adding new hash and arrays
+
+year1 = ["The Matrix", "Star Wars: Episode 1", "The Mummy"]
+year2 = ["Avatar", "Star Trek", "District 9"]
+year3 = ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+
+movies = { 1999 => year1, 2009 => year2, 2019 => year3 }
+
+# phone numbers array
+
+phone_number = [[1, 2, 3], [4, 5, 6], [7, 8, 9], ["*", 0, "#"]]
+
+# array containing three new countries
+
+canada = {name: "Canada", continent: "North America", island: "not an island"}
+united states = {name: "United States", continent: "North America", island: "The United States is not an island"}
+england = {name: "England", continent: "Europe", island: "England is not an island"}
+
+countries = [canada, united states, england]
+
+# exercsie 7 --------------------------------------------------------------------
+
+# Skate message output 20 times displayed
+
+20.times do
+  puts "I will not skateboard in the halls"
+end
+
+# Skate message displayed in an array 20 times
+
+skate = "I will not skateboard in the halls"
+
+array.new(20, skate)
+
+
+# Array counting from 1-50
+
+(1..50).to_a
+
+# Array loop to find sum
+
+array = (1..10).to_a
+
+sum = 0
+
+array.each { |count| sum += count }
+
+# sort numbers up to 50 array each number 3
+
+array = (1..50).to_a * 3.sort
+
+array.sort
+
+# print out countries that are not islands
+# wasn't sure how to do this (code academy show me this solution)
+
+cities = ["canada", "united states", "england"]
+
+[1] = canada
+[2] = united states
+[3] = england
+
+console.log(cities[1, 2, 3]);
+
+# exercise 8 -------------------------------------------------------------------
+
+sum = 0
+
+expenses = [5, 10, 2.50, 0.75]
+
+expenses.each { |x| sum += x}
+
+sum
+
+# exercise 9 -------------------------------------------------------------------
