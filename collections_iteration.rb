@@ -286,3 +286,41 @@ expenses.each { |x| sum += x}
 sum
 
 # exercise 9 -------------------------------------------------------------------
+
+# task 1
+
+grocery_list = ["smoked salmon", "bread", "cream cheese", "lemon", "onion", "capers"]
+
+grocery_list.each = { |grocery| p "*#{grocery_list}"}
+
+grocery_list << "orange juice"
+
+# task 2
+
+grocery_list.size
+
+# task 3
+
+apple jucie = grocery_list.include? "apple juice"
+
+  if apple_juice = false
+    puts "We need more apple juice"
+  else
+    puts "We don't need anymore apple juice"
+  end
+
+  # task 4
+
+  grocery_list [1]
+
+  # task 5
+
+  grocery_list.sort
+
+  grocery_list.each { |grocery| p "* #{grocery_list}"}
+
+  # task 6
+
+  grocery_list.delete_at(5)
+
+  grocery_list { |grocery| p "* #{grocery_list}"}
